@@ -1,0 +1,1038 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#17130f">
+<meta name="description" content="Discover bespoke fragrances, rare perfume ingredients and personalised scent creation at Maison Élan, a luxury perfume atelier.">
+<title>Maison Élan — Bespoke Perfume Atelier</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+ --ink:#211a15;--paper:#f8f4ed;--cream:#eee5d7;--gold:#b69760;
+ --muted:#82776b;--dark:#17130f;--white:#fffdf9;
+ --serif:'Cormorant Garamond',Georgia,serif;
+ --sans:'DM Sans',Arial,sans-serif;--line:rgba(60,45,31,.16);
+ --shadow:0 20px 60px rgba(42,30,18,.11);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.65}
+body,button,input,select,textarea{font-family:var(--sans)}
+img{display:block;max-width:100%;width:100%;object-fit:cover}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer}
+button,input,select,textarea{font-size:inherit}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+::selection{background:var(--gold);color:white}
+.container{width:min(1200px,90%);margin-inline:auto}
+.section{padding:100px 0}
+.section-heading{max-width:690px;margin-bottom:42px}
+.eyebrow{text-transform:uppercase;letter-spacing:3px;font-size:.69rem;font-weight:700;color:var(--gold)}
+h1,h2,h3,h4,p{margin-top:0}
+h1,h2,h3,.serif{font-family:var(--serif);font-weight:500;line-height:1.08}
+h2{font-size:clamp(2.5rem,5vw,4.6rem);margin-bottom:20px}
+h3{font-size:1.8rem}
+.lead{color:var(--muted);max-width:610px;font-size:1rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:14px 23px;border:1px solid var(--ink);background:var(--ink);color:white;transition:.3s}
+.btn:hover{background:var(--gold);border-color:var(--gold);transform:translateY(-2px)}
+.btn-light{background:transparent;color:var(--ink)}
+.btn-light:hover{color:white}
+.btn-gold{background:var(--gold);border-color:var(--gold)}
+.text-link{display:inline-block;border-bottom:1px solid var(--gold);padding-bottom:5px;font-size:.82rem}
+.topline{background:var(--dark);color:#e8dac5;text-align:center;padding:8px 12px;font-size:.68rem;letter-spacing:2px;text-transform:uppercase}
+.header{position:sticky;top:0;z-index:50;background:rgba(248,244,237,.96);backdrop-filter:blur(15px);border-bottom:1px solid var(--line)}
+.nav{min-height:83px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{font-family:var(--serif);font-size:1.8rem;letter-spacing:3px;white-space:nowrap}
+.brand small{display:block;text-align:center;font: .53rem var(--sans);letter-spacing:4px;text-transform:uppercase}
+.nav-links{display:flex;gap:23px;align-items:center;font-size:.77rem}
+.nav-links a:hover{color:var(--gold)}
+.nav-actions{display:flex;gap:14px;align-items:center}
+.icon-btn{background:none;border:0;color:inherit;padding:8px;position:relative}
+.cart-count{position:absolute;right:0;top:0;background:var(--gold);color:white;border-radius:50%;font-size:.6rem;width:17px;height:17px;display:grid;place-items:center}
+.menu-toggle{display:none;background:none;border:0;font-size:1.5rem}
+.hero{min-height:690px;position:relative;isolation:isolate;background:#251a13;color:white;display:flex;align-items:center;overflow:hidden}
+.hero-video,.hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.hero-photo{display:none}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,14,10,.82),rgba(20,14,10,.4) 55%,rgba(20,14,10,.15));z-index:-1}
+.hero-content{padding:100px 0;max-width:680px}
+.hero .eyebrow{color:#e2c89b}
+.hero h1{font-size:clamp(4rem,8.5vw,7.5rem);margin:25px 0;letter-spacing:-2px}
+.hero p{max-width:520px;color:#eee4d8;font-size:1.05rem;margin-bottom:32px}
+.hero-buttons{display:flex;gap:13px;flex-wrap:wrap}
+.hero .btn-light{border-color:#e5d6c0;color:white}
+.hero-meta{display:flex;gap:36px;margin-top:65px;color:#e4d5c3;font-size:.7rem;letter-spacing:1.4px;text-transform:uppercase}
+.hero-meta strong{display:block;color:white;font:1.5rem var(--serif);letter-spacing:0}
+.marquee{background:var(--gold);color:#fffaf0;overflow:hidden;white-space:nowrap;padding:15px 0;font:1.2rem var(--serif);letter-spacing:2px}
+.marquee span{display:inline-block;padding-left:3%;margin-right:3%}
+.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.intro-image{position:relative;padding:0 30px 30px 0}
+.intro-image img{height:570px}
+.intro-image:after{content:"";position:absolute;right:0;bottom:0;width:65%;height:55%;border:1px solid var(--gold);z-index:-1}
+.image-note{position:absolute;bottom:45px;left:25px;background:var(--paper);padding:14px 19px;font:italic 1.2rem var(--serif)}
+.stat-row{display:flex;gap:35px;margin:30px 0}
+.stat strong{display:block;font:2.1rem var(--serif)}
+.stat span{font-size:.72rem;color:var(--muted)}
+.collection-toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:30px}
+.filter-btn{border:1px solid var(--line);background:transparent;padding:10px 18px;color:var(--ink)}
+.filter-btn.active,.filter-btn:hover{background:var(--ink);color:white}
+.product-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:23px}
+.product-card{min-width:0;position:relative}
+.product-image{position:relative;overflow:hidden;background:var(--cream)}
+.product-image img{height:330px;transition:transform .65s}
+.product-card:hover .product-image img{transform:scale(1.055)}
+.product-tag{position:absolute;top:13px;left:13px;background:var(--paper);padding:5px 9px;font-size:.62rem;letter-spacing:1px;text-transform:uppercase}
+.heart{position:absolute;right:12px;top:12px;border:0;background:rgba(255,253,249,.92);width:35px;height:35px;border-radius:50%;font-size:1.1rem}
+.heart.active{color:#a33838}
+.product-info{padding:17px 2px}
+.product-info h3{font-size:1.55rem;margin:5px 0}
+.product-notes{color:var(--muted);font-size:.76rem}
+.product-bottom{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:12px}
+.product-price{font-weight:700;font-size:.9rem}
+.add-btn{border:1px solid var(--line);background:transparent;padding:9px 11px;font-size:.69rem;text-transform:uppercase;letter-spacing:.5px}
+.add-btn:hover{background:var(--ink);color:white}
+.center{text-align:center}
+.dark-section{background:var(--dark);color:var(--paper)}
+.dark-section .lead{color:#c4b6a5}
+.story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.story-card{position:relative;min-height:400px;overflow:hidden;background:#4b392c;color:white}
+.story-card img{position:absolute;inset:0;height:100%;transition:transform .7s}
+.story-card:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 20%,rgba(16,11,8,.85))}
+.story-card:hover img{transform:scale(1.06)}
+.story-copy{position:absolute;z-index:1;bottom:24px;left:25px;right:25px}
+.story-copy p{color:#e8dccc;font-size:.85rem}
+.split-banner{display:grid;grid-template-columns:1fr 1fr;background:var(--cream)}
+.split-banner img{height:520px}
+.split-copy{padding:55px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+.note-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+.note-card{background:white;padding:26px 20px;border:1px solid var(--line);transition:.25s}
+.note-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.note-icon{font-size:2rem;color:var(--gold)}
+.note-card h3{margin:12px 0 7px}
+.note-card p{font-size:.8rem;color:var(--muted);margin-bottom:0}
+.quote{text-align:center;max-width:900px;margin:auto}
+.quote blockquote{font:clamp(2rem,4.3vw,3.6rem)/1.2 var(--serif);margin:25px 0}
+.quote cite{font-size:.72rem;letter-spacing:2px;text-transform:uppercase;font-style:normal;color:var(--gold)}
+</style>
+</head>
+<body>
+<div class="topline">Complimentary discovery samples on qualifying orders · Crafted with intention</div>
+<header class="header">
+ <div class="container nav">
+  <a href="#home" class="brand" aria-label="Maison Élan home">MAISON ÉLAN<small>THE PERFUME ATELIER</small></a>
+  <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+   <a href="#collection">Fragrances</a><a href="#atelier">Our Atelier</a><a href="#ingredients">Ingredients</a><a href="#bespoke">Bespoke</a><a href="#journal">Journal</a>
+  </nav>
+  <div class="nav-actions">
+   <button class="icon-btn" id="searchOpen" aria-label="Open product search">⌕</button>
+   <button class="icon-btn" id="cartOpen" aria-label="Open shopping bag">♧ <span class="cart-count" id="cartCount">0</span></button>
+   <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  </div>
+ </div>
+</header>
+
+<!-- HERO -->
+<main>
+<section class="hero" id="home">
+ <video class="hero-video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=1800&q=85" aria-label="Atmospheric perfume atelier background">
+  <source src="https://videos.pexels.com/video-files/3141208/3141208-hd_1920_1080_25fps.mp4" type="video/mp4">
+ </video>
+ <img class="hero-photo" src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=1800&q=85" alt="Luxury perfume bottles in warm atelier light">
+ <div class="container hero-content">
+  <span class="eyebrow">Artistry bottled · Est. 2026 · Sample brand concept</span>
+  <h1>A scent that<br><em>belongs to you.</em></h1>
+  <p>Beyond fragrance lies a feeling. Discover thoughtfully composed perfumes and a personal scent experience shaped around your own story.</p>
+  <div class="hero-buttons">
+   <a href="#collection" class="btn btn-gold">Explore the collection ↗</a>
+   <a href="#bespoke" class="btn btn-light">Create your signature scent</a>
+  </div>
+  <div class="hero-meta"><div><strong>01</strong> Your story</div><div><strong>02</strong> Rare accords</div><div><strong>03</strong> Made personal</div></div>
+ </div>
+</section>
+
+<div class="marquee" aria-label="Our philosophy">
+ <span>✳ THE ART OF SCENT</span><span>✳ MADE TO BE REMEMBERED</span><span>✳ BEAUTY IN EVERY NOTE</span><span>✳ THE ART OF SCENT</span>
+</div>
+
+<!-- BRAND STORY -->
+<section class="section" id="atelier">
+ <div class="container intro-grid">
+  <div class="intro-image">
+   <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=1000&q=85" alt="Perfume creation and carefully arranged fragrance bottles" loading="lazy">
+   <div class="image-note">An invisible form of art.</div>
+  </div>
+  <div>
+   <span class="eyebrow">The Maison philosophy</span>
+   <h2>Not just worn.<br><em>Remembered.</em></h2>
+   <p class="lead">We believe a fragrance can become a memory, a quiet signature, an unmistakable part of your presence. Our imagined atelier pairs traditional perfumery inspiration with a modern, personal approach.</p>
+   <p>From the first bright citrus note to the final warmth of woods and resins, each composition is an invitation to discover something deeply individual.</p>
+   <div class="stat-row">
+    <div class="stat"><strong>03</strong><span>Fragrance families</span></div>
+    <div class="stat"><strong>01</strong><span>Personal signature</span></div>
+    <div class="stat"><strong>∞</strong><span>Ways to express you</span></div>
+   </div>
+   <a class="text-link" href="#ingredients">Discover our philosophy ↗</a>
+  </div>
+ </div>
+</section>
+
+<!-- FRAGRANCE COLLECTION -->
+<section class="section" id="collection" style="background:#f0e9df">
+ <div class="container">
+  <div class="section-heading">
+   <span class="eyebrow">The fragrance wardrobe</span>
+   <h2>Find your <em>signature.</em></h2>
+   <p class="lead">Explore imagined compositions inspired by gardens at dawn, sunlit citrus groves, velvet evenings and the quiet depth of precious woods.</p>
+  </div>
+  <div class="collection-toolbar" id="collectionFilters" aria-label="Filter fragrances">
+   <button class="filter-btn active" data-filter="all">All fragrances</button>
+   <button class="filter-btn" data-filter="floral">Floral</button>
+   <button class="filter-btn" data-filter="woody">Woody</button>
+   <button class="filter-btn" data-filter="fresh">Fresh</button>
+   <button class="filter-btn" data-filter="amber">Amber</button>
+  </div>
+  <div class="product-grid" id="productGrid">
+   <article class="product-card" data-category="floral" data-name="Rose Nocturne">
+    <div class="product-image"><img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=700&q=85" alt="Rose Nocturne luxury fragrance bottle" loading="lazy"><span class="product-tag">Bestseller</span><button class="heart" aria-label="Add Rose Nocturne to favourites">♡</button></div>
+    <div class="product-info"><span class="eyebrow">Floral · Velvet rose</span><h3>Rose Nocturne</h3><div class="product-notes">Damask rose · Pink pepper · Soft musk</div><div class="product-bottom"><span class="product-price">₹6,800</span><button class="add-btn" data-product="Rose Nocturne" data-price="6800">Add to bag +</button></div></div>
+   </article>
+   <article class="product-card" data-category="woody" data-name="Santal Éclipse">
+    <div class="product-image"><img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=700&q=85" alt="Santal Éclipse woody fragrance" loading="lazy"><span class="product-tag">Atelier pick</span><button class="heart" aria-label="Add Santal Éclipse to favourites">♡</button></div>
+    <div class="product-info"><span class="eyebrow">Woody · Quiet warmth</span><h3>Santal Éclipse</h3><div class="product-notes">Sandalwood · Cardamom · Cashmere woods</div><div class="product-bottom"><span class="product-price">₹7,400</span><button class="add-btn" data-product="Santal Éclipse" data-price="7400">Add to bag +</button></div></div>
+   </article>
+   <article class="product-card" data-category="fresh" data-name="Citrus Sol">
+    <div class="product-image"><img src="https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?auto=format&fit=crop&w=700&q=85" alt="Citrus Sol fresh fragrance" loading="lazy"><span class="product-tag">Daylight</span><button class="heart" aria-label="Add Citrus Sol to favourites">♡</button></div>
+    <div class="product-info"><span class="eyebrow">Fresh · Sunlit citrus</span><h3>Citrus Sol</h3><div class="product-notes">Bergamot · Neroli · Bitter orange</div><div class="product-bottom"><span class="product-price">₹5,900</span><button class="add-btn" data-product="Citrus Sol" data-price="5900">Add to bag +</button></div></div>
+   </article>
+   <article class="product-card" data-category="amber" data-name="Ambre Velours">
+    <div class="product-image"><img src="https://images.unsplash.com/photo-1590736969955-71cc94901144?auto=format&fit=crop&w=700&q=85" alt="Ambre Velours warm amber perfume" loading="lazy"><span class="product-tag">Evening</span><button class="heart" aria-label="Add Ambre Velours to favourites">♡</button></div>
+    <div class="product-info"><span class="eyebrow">Amber · Golden warmth</span><h3>Ambre Velours</h3><div class="product-notes">Labdanum · Vanilla · Golden resins</div><div class="product-bottom"><span class="product-price">₹7,800</span><button class="add-btn" data-product="Ambre Velours" data-price="7800">Add to bag +</button></div></div>
+   </article>
+   <article class="product-card" data-category="floral" data-name="Iris de Lune">
+    <div class="product-image"><img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85" alt="Iris de Lune elegant perfume bottle" loading="lazy"><button class="heart" aria-label="Add Iris de Lune to favourites">♡</button></div>
+    <div class="product-info"><span class="eyebrow">Floral · Powder-soft</span><h3>Iris de Lune</h3><div class="product-notes">Iris · Violet leaf · White suede</div><div class="product-bottom"><span class="product-price">₹8,200</span><button class="add-btn" data-product="Iris de Lune" data-price="8200">Add to bag +</button></div></div>
+   </article>
+   <article class="product-card" data-category="woody" data-name="Bois Secret">
+    <div class="product-image"><img src="https://images.unsplash.com/photo-1590736969955-71cc94901144?auto=format&fit=crop&w=700&q=85" alt="Bois Secret dark woods fragrance" loading="lazy"><button class="heart" aria-label="Add Bois Secret to favourites">♡</button></div>
+    <div class="product-info"><span class="eyebrow">Woody · Earth and smoke</span><h3>Bois Secret</h3><div class="product-notes">Cedar · Vetiver · Smoked tea</div><div class="product-bottom"><span class="product-price">₹7,100</span><button class="add-btn" data-product="Bois Secret" data-price="7100">Add to bag +</button></div></div>
+   </article>
+   <article class="product-card" data-category="fresh" data-name="Thé Blanc">
+    <div class="product-image"><img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=700&q=85" alt="Thé Blanc clean minimalist fragrance" loading="lazy"><button class="heart" aria-label="Add Thé Blanc to favourites">♡</button></div>
+    <div class="product-info"><span class="eyebrow">Fresh · Serene clarity</span><h3>Thé Blanc</h3><div class="product-notes">White tea · Fig leaf · Clean musk</div><div class="product-bottom"><span class="product-price">₹6,200</span><button class="add-btn" data-product="Thé Blanc" data-price="6200">Add to bag +</button></div></div>
+   </article>
+   <article class="product-card" data-category="amber" data-name="Nuit Dorée">
+    <div class="product-image"><img src="https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?auto=format&fit=crop&w=700&q=85" alt="Nuit Dorée opulent golden fragrance" loading="lazy"><button class="heart" aria-label="Add Nuit Dorée to favourites">♡</button></div>
+    <div class="product-info"><span class="eyebrow">Amber · After dark</span><h3>Nuit Dorée</h3><div class="product-notes">Saffron · Tonka · Dark vanilla</div><div class="product-bottom"><span class="product-price">₹8,600</span><button class="add-btn" data-product="Nuit Dorée" data-price="8600">Add to bag +</button></div></div>
+   </article>
+  </div>
+  <p class="center" style="margin-top:38px;color:var(--muted);font-size:.8rem">All fragrances and prices shown are illustrative sample content for this website concept.</p>
+ </div>
+</section>
+
+<!-- FRAGRANCE FAMILIES -->
+<section class="section" id="families">
+ <div class="container">
+  <div class="section-heading">
+   <span class="eyebrow">A world of olfactory emotions</span>
+   <h2>Four paths to <em>yourself.</em></h2>
+   <p class="lead">Begin with the mood you want to carry. Each fragrance family offers a different way to express it.</p>
+  </div>
+  <div class="story-grid">
+   <article class="story-card"><img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=850&q=85" alt="Delicate garden flowers for floral perfume" loading="lazy"><div class="story-copy"><span class="eyebrow">01 · Romantic</span><h3>Floral Reverie</h3><p>Rose, jasmine and iris unfold like petals in warm morning light.</p><a class="text-link" href="#collection" style="color:white">Explore floral scents ↗</a></div></article>
+   <article class="story-card"><img src="https://images.unsplash.com/photo-1476231682828-37e571bc172f?auto=format&fit=crop&w=850&q=85" alt="Sunlight through a deep green forest" loading="lazy"><div class="story-copy"><span class="eyebrow">02 · Grounded</span><h3>Woods & Earth</h3><p>Rooted vetiver, cedar and sandalwood bring a quiet confidence.</p><a class="text-link" href="#collection" style="color:white">Explore woody scents ↗</a></div></article>
+   <article class="story-card"><img src="https://images.unsplash.com/photo-1532634896-26909d0d4b85?auto=format&fit=crop&w=850&q=85" alt="Fresh citrus fruit and sunlight" loading="lazy"><div class="story-copy"><span class="eyebrow">03 · Effortless</span><h3>Fresh Horizons</h3><p>Citrus, tea and aromatic herbs capture the energy of a new day.</p><a class="text-link" href="#collection" style="color:white">Explore fresh scents ↗</a></div></article>
+  </div>
+ </div>
+</section>
+
+<!-- INGREDIENT LIBRARY -->
+<section class="section" id="ingredients" style="background:#eee5d7">
+ <div class="container">
+  <div class="section-heading">
+   <span class="eyebrow">From nature to composition</span>
+   <h2>The poetry of <em>ingredients.</em></h2>
+   <p class="lead">A perfume is a conversation between materials. Explore a few of the notes that inspire our imagined compositions.</p>
+  </div>
+  <div class="note-grid">
+   <article class="note-card"><div class="note-icon">✿</div><h3>Damask Rose</h3><p>Rich, petal-soft and subtly honeyed. A classic heart note with romantic depth.</p></article>
+   <article class="note-card"><div class="note-icon">◉</div><h3>Bergamot</h3><p>Bright citrus peel with a delicate green bitterness and an elegant opening.</p></article>
+   <article class="note-card"><div class="note-icon">♧</div><h3>Sandalwood</h3><p>Creamy, smooth and enveloping, creating a soft foundation for a fragrance.</p></article>
+   <article class="note-card"><div class="note-icon">✧</div><h3>Saffron</h3><p>Warm, leathery and gently spiced, adding a precious glow to an accord.</p></article>
+   <article class="note-card"><div class="note-icon">❋</div><h3>Jasmine</h3><p>Luminous white florals with an expressive, almost velvety character.</p></article>
+   <article class="note-card"><div class="note-icon">⌁</div><h3>Vetiver</h3><p>Earthy roots, dry woods and green facets bring depth and texture.</p></article>
+   <article class="note-card"><div class="note-icon">◇</div><h3>Vanilla</h3><p>Warm sweetness and rounded comfort, from delicate to richly gourmand.</p></article>
+   <article class="note-card"><div class="note-icon">❧</div><h3>White Tea</h3><p>Airy, understated and clean, evoking linen, light and quiet mornings.</p></article>
+  </div>
+  <p style="font-size:.76rem;color:var(--muted);margin-top:20px">Ingredient descriptions are general fragrance education, not a guarantee that any specific formula contains these materials.</p>
+ </div>
+</section>
+
+<!-- SCENT DISCOVERY TOOL -->
+<section class="section dark-section" id="discovery">
+ <div class="container intro-grid">
+  <div>
+   <span class="eyebrow">Your scent, your language</span>
+   <h2>Find the fragrance<br><em>that feels like you.</em></h2>
+   <p class="lead">Answer three simple questions. Our on-page fragrance guide will suggest a direction to explore. This is a playful discovery tool, not a professional consultation.</p>
+   <form id="scentQuiz" class="quiz-form">
+    <label for="mood">What should your fragrance feel like?</label>
+    <select id="mood" required style="width:100%;padding:14px;margin:10px 0 22px;background:#282019;color:white;border:1px solid #76644e">
+     <option value="">Choose your mood</option><option value="romantic">Romantic and expressive</option><option value="confident">Grounded and confident</option><option value="fresh">Fresh and effortless</option><option value="warm">Warm and captivating</option>
+    </select>
+    <label for="moment">When will you wear it most?</label>
+    <select id="moment" required style="width:100%;padding:14px;margin:10px 0 22px;background:#282019;color:white;border:1px solid #76644e">
+     <option value="">Choose an occasion</option><option value="day">Everyday and daytime</option><option value="evening">Evenings and occasions</option><option value="all">A signature for any moment</option>
+    </select>
+    <label for="intensity">How present should the scent feel?</label>
+    <select id="intensity" required style="width:100%;padding:14px;margin:10px 0 24px;background:#282019;color:white;border:1px solid #76644e">
+     <option value="">Choose intensity</option><option value="soft">Soft and intimate</option><option value="balanced">Balanced and noticeable</option><option value="bold">Bold and memorable</option>
+    </select>
+    <button class="btn btn-gold" type="submit">Discover my scent ↗</button>
+   </form>
+  </div>
+  <div style="background:#282019;border:1px solid #5b4937;padding:36px">
+   <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=900&q=85" alt="Perfume bottles arranged for fragrance discovery" loading="lazy" style="height:300px;margin-bottom:25px">
+   <span class="eyebrow">Your discovery result</span>
+   <div id="quizResult" aria-live="polite"><h3>Every scent begins with a feeling.</h3><p style="color:#c4b6a5">Your personalised direction will appear here after you complete the questions.</p></div>
+  </div>
+ </div>
+</section>
+
+<!-- HOW IT IS MADE -->
+<section class="section" id="craft">
+ <div class="container">
+  <div class="section-heading center" style="margin-inline:auto">
+   <span class="eyebrow">Inside the atelier</span>
+   <h2>Composed with <em>intention.</em></h2>
+   <p class="lead" style="margin-inline:auto">A fragrance concept moves from inspiration to composition through patient exploration, careful evaluation and thoughtful finishing.</p>
+  </div>
+  <div class="story-grid">
+   <article class="note-card"><span class="eyebrow">Step 01</span><h3>The inspiration</h3><p>A memory, a place, a texture or a feeling establishes the emotional direction of the fragrance.</p></article>
+   <article class="note-card"><span class="eyebrow">Step 02</span><h3>The composition</h3><p>Top, heart and base notes are considered together to develop a balanced olfactory story.</p></article>
+   <article class="note-card"><span class="eyebrow">Step 03</span><h3>The refinement</h3><p>Blotter evaluations, skin testing and revisions help shape the final sensory impression.</p></article>
+  </div>
+ </div>
+</section>
+
+<!-- DISCOVERY SET -->
+<section class="section" id="discovery-set" style="background:#eee5d7">
+ <div class="container split-banner">
+  <img src="https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?auto=format&fit=crop&w=1100&q=85" alt="An elegant fragrance arrangement for a perfume discovery set" loading="lazy">
+  <div class="split-copy">
+   <span class="eyebrow">The first encounter</span>
+   <h2>A little world<br>of <em>possibilities.</em></h2>
+   <p class="lead">Meet several fragrance directions before choosing your favourite. A sample wardrobe can help you compare opening notes, dry-down and how a perfume develops on your skin.</p>
+   <ul><li>Four contrasting fragrance directions</li><li>Explore in your own time</li><li>Keep notes on your favourites</li></ul>
+   <p><strong>Illustrative concept price: ₹1,250</strong></p>
+   <button class="btn" id="discoveryAdd" type="button">Add discovery set +</button>
+  </div>
+ </div>
+</section>
+
+<!-- BESPOKE SERVICE -->
+<section class="section" id="bespoke">
+ <div class="container intro-grid">
+  <div>
+   <span class="eyebrow">The personal fragrance service</span>
+   <h2>One story.<br><em>One signature.</em></h2>
+   <p class="lead">A bespoke fragrance experience begins with a conversation about your memories, preferences and the emotions you want your scent to evoke.</p>
+   <p>Discuss favourite notes, fragrances you already enjoy, the occasions you have in mind and how you like a scent to develop. The process shown here describes a proposed service concept rather than a live booking offering.</p>
+   <div style="display:grid;gap:15px;margin:30px 0">
+    <div><strong>01 / Discover</strong><p style="color:var(--muted);margin:4px 0">Describe your scent memories and preferences.</p></div>
+    <div><strong>02 / Explore</strong><p style="color:var(--muted);margin:4px 0">Compare notes and possible fragrance directions.</p></div>
+    <div><strong>03 / Refine</strong><p style="color:var(--muted);margin:4px 0">Develop a considered direction for your signature.</p></div>
+   </div>
+   <a href="#consultation" class="btn">Begin your fragrance brief ↗</a>
+  </div>
+  <div class="intro-image">
+   <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=1000&q=85" alt="Fragrance materials and bottles on an atelier table" loading="lazy">
+   <div class="image-note">Made personal, from the first note.</div>
+  </div>
+ </div>
+</section>
+
+<!-- GIFTING -->
+<section class="section dark-section" id="gifting">
+ <div class="container">
+  <div class="section-heading">
+   <span class="eyebrow">Considered gifting</span>
+   <h2>Give a feeling, <em>beautifully.</em></h2>
+   <p class="lead">A fragrance gift can mark a milestone, celebrate a new beginning or simply tell someone they are remembered.</p>
+  </div>
+  <div class="story-grid">
+   <article class="story-card"><img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=850&q=85" alt="Thoughtfully wrapped gift with ribbon" loading="lazy"><div class="story-copy"><span class="eyebrow">For the thoughtful giver</span><h3>The Art of Gifting</h3><p>Pair a fragrance with a handwritten message and a moment of discovery.</p><a href="#consultation" class="text-link" style="color:white">Plan a fragrance gift ↗</a></div></article>
+   <article class="story-card"><img src="https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=850&q=85" alt="Elegant gift box and celebration details" loading="lazy"><div class="story-copy"><span class="eyebrow">For meaningful moments</span><h3>Milestone Editions</h3><p>Imagine a scent selected for a celebration, a new chapter or a special memory.</p><a href="#consultation" class="text-link" style="color:white">Discuss an occasion ↗</a></div></article>
+   <article class="story-card"><img src="https://images.unsplash.com/photo-1602523961358-f9f03dd557db?auto=format&fit=crop&w=850&q=85" alt="Elegant keepsake presentation" loading="lazy"><div class="story-copy"><span class="eyebrow">For lasting memories</span><h3>A Personal Touch</h3><p>Explore the idea of a custom note, thoughtful presentation and a scent story.</p><a href="#consultation" class="text-link" style="color:white">Personalise a gift ↗</a></div></article>
+  </div>
+ </div>
+</section>
+
+<!-- VISUAL GALLERY -->
+<section class="section" id="gallery">
+ <div class="container">
+  <div class="section-heading">
+   <span class="eyebrow">A visual study</span>
+   <h2>Objects of <em>desire.</em></h2>
+   <p class="lead">The details surrounding fragrance: reflective glass, botanical textures, warm light and the quiet beauty of a carefully arranged object.</p>
+  </div>
+  <div class="gallery-grid" style="display:grid;grid-template-columns:1.2fr .8fr .8fr;grid-template-rows:240px 240px;gap:13px">
+   <button class="gallery-item" data-full="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=1400&q=90" aria-label="View perfume still life" style="grid-row:span 2;border:0;padding:0;overflow:hidden;background:var(--cream)"><img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=850&q=85" alt="Perfume still life in soft light" loading="lazy" style="height:100%"></button>
+   <button class="gallery-item" data-full="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1400&q=90" aria-label="View botanical flowers" style="border:0;padding:0;overflow:hidden;background:var(--cream)"><img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=700&q=85" alt="Botanical flowers and petals" loading="lazy" style="height:100%"></button>
+   <button class="gallery-item" data-full="https://images.unsplash.com/photo-1476231682828-37e571bc172f?auto=format&fit=crop&w=1400&q=90" aria-label="View forest inspiration" style="border:0;padding:0;overflow:hidden;background:var(--cream)"><img src="https://images.unsplash.com/photo-1476231682828-37e571bc172f?auto=format&fit=crop&w=700&q=85" alt="Forest textures inspiring woody notes" loading="lazy" style="height:100%"></button>
+   <button class="gallery-item" data-full="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=1400&q=90" aria-label="View perfume bottle" style="border:0;padding:0;overflow:hidden;background:var(--cream)"><img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=700&q=85" alt="Perfume bottle close-up" loading="lazy" style="height:100%"></button>
+   <button class="gallery-item" data-full="https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?auto=format&fit=crop&w=1400&q=90" aria-label="View fragrance detail" style="border:0;padding:0;overflow:hidden;background:var(--cream)"><img src="https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?auto=format&fit=crop&w=700&q=85" alt="Fragrance detail in warm light" loading="lazy" style="height:100%"></button>
+  </div>
+ </div>
+</section>
+
+<!-- EDITORIAL QUOTE -->
+<section class="section" style="background:#eee5d7">
+ <div class="container quote">
+  <span class="eyebrow">A thought to carry</span>
+  <blockquote>“Perfume is the art of making a moment last beyond its time.”</blockquote>
+  <cite>The Maison Élan philosophy · Original brand concept</cite>
+ </div>
+</section>
+
+<!-- JOURNAL -->
+<section class="section" id="journal">
+ <div class="container">
+  <div class="section-heading">
+   <span class="eyebrow">The scent journal</span>
+   <h2>Notes on the <em>art of living.</em></h2>
+   <p class="lead">Short guides to help you understand fragrance, explore scent families and build a personal fragrance wardrobe.</p>
+  </div>
+  <div class="story-grid">
+   <article class="note-card"><img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=750&q=85" alt="Flowers for a floral fragrance article" loading="lazy" style="height:210px;margin-bottom:22px"><span class="eyebrow">Fragrance notes · 5 min read</span><h3>Understanding top, heart and base notes</h3><p>Learn how a perfume unfolds from its first impression to its lingering dry-down.</p><a class="text-link journal-open" href="#articleModal" data-title="The three chapters of a fragrance" data-copy="Top notes provide the first impression. Heart notes form the central character as the opening fades. Base notes give depth and contribute to the scent's lasting impression. Evaluate a fragrance over time instead of judging it from the first spray alone.">Read the story ↗</a></article>
+   <article class="note-card"><img src="https://images.unsplash.com/photo-1476231682828-37e571bc172f?auto=format&fit=crop&w=750&q=85" alt="Woodland setting for a woody scent guide" loading="lazy" style="height:210px;margin-bottom:22px"><span class="eyebrow">Scent wardrobe · 4 min read</span><h3>How to build a personal scent wardrobe</h3><p>Think about weather, occasions, mood and the kinds of notes you naturally enjoy.</p><a class="text-link journal-open" href="#articleModal" data-title="Building a personal scent wardrobe" data-copy="Start with a versatile fragrance you enjoy wearing. Add a fresh option for daytime, a richer composition for evenings and something distinctive for special occasions. Test each scent on skin, allow it to develop and keep notes about your experience.">Read the story ↗</a></article>
+   <article class="note-card"><img src="https://images.unsplash.com/photo-1532634896-26909d0d4b85?auto=format&fit=crop&w=750&q=85" alt="Citrus-inspired landscape for a fragrance guide" loading="lazy" style="height:210px;margin-bottom:22px"><span class="eyebrow">The ritual · 3 min read</span><h3>A thoughtful ritual for wearing perfume</h3><p>Discover practical ways to apply, store and enjoy fragrance without overdoing it.</p><a class="text-link journal-open" href="#articleModal" data-title="A considered fragrance ritual" data-copy="Apply a modest amount according to the product directions. Avoid rubbing freshly sprayed skin. Store the bottle away from direct sunlight, heat and humidity. Fragrance performance varies with formula, environment and individual skin.">Read the story ↗</a></article>
+  </div>
+ </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section dark-section" id="voices">
+ <div class="container">
+  <div class="section-heading center" style="margin-inline:auto">
+   <span class="eyebrow">Imagined customer stories</span>
+   <h2>Fragrance is <em>personal.</em></h2>
+   <p class="lead" style="margin-inline:auto">Sample testimonials illustrate how customer stories might appear in a finished brand website. They are not verified real reviews.</p>
+  </div>
+  <div class="story-grid">
+   <article class="note-card"><div style="color:var(--gold);letter-spacing:3px">★★★★★</div><blockquote class="serif" style="font-size:1.55rem;margin:18px 0">“The soft floral direction feels elegant without feeling overwhelming.”</blockquote><span class="eyebrow">Sample review · Aanya</span></article>
+   <article class="note-card"><div style="color:var(--gold);letter-spacing:3px">★★★★★</div><blockquote class="serif" style="font-size:1.55rem;margin:18px 0">“I love comparing the opening notes with how the fragrance develops.”</blockquote><span class="eyebrow">Sample review · Rohan</span></article>
+   <article class="note-card"><div style="color:var(--gold);letter-spacing:3px">★★★★★</div><blockquote class="serif" style="font-size:1.55rem;margin:18px 0">“A beautifully considered concept for finding a scent that feels personal.”</blockquote><span class="eyebrow">Sample review · Meera</span></article>
+  </div>
+ </div>
+</section>
+
+<!-- SERVICE PROMISE -->
+<section class="section" id="values">
+ <div class="container">
+  <div class="section-heading center" style="margin-inline:auto">
+   <span class="eyebrow">The experience we aspire to</span>
+   <h2>Beauty in every <em>detail.</em></h2>
+  </div>
+  <div class="note-grid">
+   <article class="note-card"><div class="note-icon">✧</div><h3>Thoughtful curation</h3><p>Distinct scent directions designed to help you explore your preferences.</p></article>
+   <article class="note-card"><div class="note-icon">◇</div><h3>Personal discovery</h3><p>Simple prompts that help you articulate the notes and moods you enjoy.</p></article>
+   <article class="note-card"><div class="note-icon">❋</div><h3>Considered design</h3><p>A refined visual language inspired by material, craft and quiet luxury.</p></article>
+   <article class="note-card"><div class="note-icon">♡</div><h3>Meaningful gifting</h3><p>Ideas for making a fragrance selection feel thoughtful and memorable.</p></article>
+  </div>
+ </div>
+</section>
+<!-- CONSULTATION -->
+<section class="section" id="consultation" style="background:#eee5d7">
+ <div class="container intro-grid">
+  <div>
+   <span class="eyebrow">Your story starts here</span>
+   <h2>Let's create a scent <em>story.</em></h2>
+   <p class="lead">Tell us a little about the fragrance you imagine. This sample form runs in your browser only; it does not send an actual booking or save your details to a server.</p>
+   <div style="margin-top:35px">
+    <p><strong>For the curious</strong><br>Share the notes you love and the memories you associate with them.</p>
+    <p><strong>For the gift giver</strong><br>Describe the occasion, the recipient and the feeling you want to capture.</p>
+    <p><strong>For the fragrance enthusiast</strong><br>Tell us about your favourite scent families and preferred intensity.</p>
+   </div>
+  </div>
+  <form id="consultForm" class="note-card" style="padding:32px">
+   <span class="eyebrow">Bespoke fragrance brief · Demo</span>
+   <h3 style="margin-top:10px">Your fragrance brief</h3>
+   <label for="fullName">Your name</label>
+   <input id="fullName" name="name" required maxlength="80" placeholder="Enter your name">
+   <label for="email">Email address</label>
+   <input id="email" name="email" type="email" required placeholder="you@example.com">
+   <label for="briefStyle">Preferred scent direction</label>
+   <select id="briefStyle" name="style" required>
+    <option value="">Choose a direction</option>
+    <option>Floral and romantic</option><option>Fresh and luminous</option>
+    <option>Woody and earthy</option><option>Amber and sensual</option>
+    <option>Surprise me</option>
+   </select>
+   <label for="briefMessage">Tell us about your idea</label>
+   <textarea id="briefMessage" name="message" rows="4" maxlength="1200" placeholder="Notes you love, memories, occasion or mood..."></textarea>
+   <button class="btn" type="submit" style="width:100%;margin-top:20px">Preview my fragrance brief ↗</button>
+   <p style="font-size:.72rem;color:var(--muted);margin:14px 0 0">Frontend demo only. No email is sent and no appointment is booked.</p>
+  </form>
+ </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+ <div class="container">
+  <div class="section-heading">
+   <span class="eyebrow">A few helpful answers</span>
+   <h2>Frequently <em>considered.</em></h2>
+  </div>
+  <div class="faq-list">
+   <details><summary>What does bespoke perfume mean?</summary><p>Bespoke perfume refers to a fragrance created or developed around an individual's preferences. A real service may include a consultation, exploration of notes, evaluation and refinement.</p></details>
+   <details><summary>How should I test a new fragrance?</summary><p>Begin with a small amount on skin, follow the product's directions and allow the scent to develop over several hours. Test one or two fragrances at a time so you can compare them comfortably.</p></details>
+   <details><summary>What are top, heart and base notes?</summary><p>Top notes provide the opening impression, heart notes establish the central character, and base notes contribute depth to the later stages of the fragrance.</p></details>
+   <details><summary>How can I make my perfume last longer?</summary><p>Longevity depends on the formula, application, skin and environment. Store perfume away from heat and sunlight. Apply as directed and avoid spraying into eyes or onto irritated skin.</p></details>
+   <details><summary>Can I find a fragrance as a gift?</summary><p>Consider the recipient's preferred notes, existing fragrances and typical occasions. A discovery set or gift card from a real, verified retailer can be a thoughtful option.</p></details>
+   <details><summary>Are the prices on this website real?</summary><p>No. The prices, product names and Maison Élan business identity on this concept website are illustrative. This website does not process real purchases.</p></details>
+   <details><summary>Can I book a fragrance consultation here?</summary><p>The form is a frontend demonstration. It can preview your fragrance brief locally, but it cannot reserve an appointment or contact an atelier.</p></details>
+   <details><summary>Does the fragrance finder store my answers?</summary><p>No. Your selections are processed in your browser to show a suggested fragrance direction. They are not submitted to a backend.</p></details>
+  </div>
+ </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="section dark-section" id="newsletter">
+ <div class="container center">
+  <span class="eyebrow">Letters from the atelier</span>
+  <h2>Stay close to <em>the art of scent.</em></h2>
+  <p class="lead" style="margin:0 auto 28px">Discover fragrance stories, ingredient inspiration and ideas for a more personal scent wardrobe.</p>
+  <form id="newsletterForm" style="display:flex;gap:10px;max-width:570px;margin:auto;justify-content:center">
+   <label for="newsEmail" style="position:absolute;left:-9999px">Email address</label>
+   <input type="email" id="newsEmail" required placeholder="Your email address" style="flex:1;min-width:0;padding:15px;border:1px solid #8b7964;background:#282019;color:white">
+   <button class="btn btn-gold" type="submit">Join the journal ↗</button>
+  </form>
+  <p style="font-size:.7rem;color:#c4b6a5;margin-top:14px">Demonstration only. This form does not subscribe you to a mailing list.</p>
+ </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#100d0a;color:#e9dfd1;padding:65px 0 22px">
+ <div class="container">
+  <div class="footer-grid" style="display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:38px;padding-bottom:45px">
+   <div><a class="brand" href="#home">MAISON ÉLAN<small>THE PERFUME ATELIER</small></a><p style="color:#b8a995;font-size:.83rem;max-width:300px;margin-top:22px">An imagined world of considered fragrance, personal discovery and the quiet art of scent.</p><a class="text-link" href="#atelier">Discover our philosophy ↗</a></div>
+   <div><h4>Explore</h4><p><a href="#collection">Fragrance collection</a></p><p><a href="#families">Scent families</a></p><p><a href="#ingredients">Ingredients</a></p><p><a href="#gallery">Gallery</a></p></div>
+   <div><h4>Experiences</h4><p><a href="#discovery">Scent finder</a></p><p><a href="#discovery-set">Discovery set</a></p><p><a href="#bespoke">Bespoke concept</a></p><p><a href="#gifting">Gifting inspiration</a></p></div>
+   <div><h4>Information</h4><p><a href="#faq">FAQs</a></p><p><a href="#journal">Scent journal</a></p><p><a href="#consultation">Contact concept</a></p><p><a href="#newsletter">Newsletter demo</a></p></div>
+  </div>
+  <div style="border-top:1px solid #44392d;padding-top:20px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;color:#b8a995;font-size:.72rem">
+   <span>© 2026 Maison Élan · Fictional website concept</span>
+   <span>All product listings, testimonials and prices are illustrative.</span>
+   <a href="#home">Back to top ↑</a>
+  </div>
+ </div>
+</footer>
+</main>
+
+<!-- MODAL: SEARCH -->
+<div class="modal-backdrop" id="searchModal" role="dialog" aria-modal="true" aria-labelledby="searchTitle">
+ <div class="modal-panel">
+  <button class="modal-close" data-close aria-label="Close search">×</button>
+  <span class="eyebrow">Explore the collection</span><h3 id="searchTitle">Find a fragrance</h3>
+  <label for="searchInput">Search by name or scent family</label>
+  <input id="searchInput" placeholder="Try rose, woody, citrus...">
+  <div id="searchResults" class="search-results" aria-live="polite"></div>
+ </div>
+</div>
+
+<!-- MODAL: SHOPPING BAG -->
+<div class="modal-backdrop" id="cartModal" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+ <div class="modal-panel">
+  <button class="modal-close" data-close aria-label="Close shopping bag">×</button>
+  <span class="eyebrow">Your selections</span><h3 id="cartTitle">Shopping bag</h3>
+  <div id="cartItems" aria-live="polite"></div>
+  <div class="cart-total"><strong>Illustrative total</strong><strong id="cartTotal">₹0</strong></div>
+  <p class="demo-note">Demo only. No payment, checkout or order placement is available.</p>
+  <button class="btn" id="demoCheckout" style="width:100%">Review demo selections</button>
+ </div>
+</div>
+
+<!-- MODAL: IMAGE LIGHTBOX -->
+<div class="modal-backdrop" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Gallery image">
+ <div class="modal-panel image-modal">
+  <button class="modal-close" data-close aria-label="Close image">×</button>
+  <img id="lightboxImage" src="" alt="Expanded fragrance gallery image">
+ </div>
+</div>
+
+<!-- MODAL: JOURNAL ARTICLE -->
+<div class="modal-backdrop" id="articleModal" role="dialog" aria-modal="true" aria-labelledby="articleTitle">
+ <div class="modal-panel">
+  <button class="modal-close" data-close aria-label="Close article">×</button>
+  <span class="eyebrow">The scent journal</span>
+  <h3 id="articleTitle">Fragrance notes</h3>
+  <p id="articleCopy"></p>
+  <button class="btn" data-close>Continue exploring</button>
+ </div>
+</div>
+
+<!-- TOAST -->
+<div id="toast" role="status" aria-live="polite"></div>
+
+<style>
+/* FORM ELEMENTS */
+form label{display:block;font-size:.78rem;font-weight:600;margin-top:14px}
+form input,form select,form textarea{width:100%;padding:12px 13px;border:1px solid var(--line);background:var(--white);color:var(--ink);border-radius:0}
+form textarea{resize:vertical}
+form input::placeholder,form textarea::placeholder{color:#9b9185}
+form input:focus,form select:focus,form textarea:focus{border-color:var(--gold);outline:2px solid rgba(182,151,96,.2)}
+/* FAQ ACCORDION */
+.faq-list{max-width:850px}
+.faq-list details{border-bottom:1px solid var(--line);padding:22px 0}
+.faq-list summary{cursor:pointer;list-style:none;font:1.45rem var(--serif);padding-right:30px;position:relative}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary:after{content:"+";position:absolute;right:0;color:var(--gold);font:1.5rem var(--sans)}
+.faq-list details[open] summary:after{content:"−"}
+.faq-list details p{color:var(--muted);max-width:740px;margin:15px 0 0}
+/* MODALS */
+.modal-backdrop{position:fixed;inset:0;background:rgba(15,11,8,.76);z-index:100;display:none;align-items:center;justify-content:center;padding:20px}
+.modal-backdrop.open{display:flex}
+.modal-panel{position:relative;background:var(--paper);color:var(--ink);padding:36px;width:min(560px,100%);max-height:85vh;overflow:auto;box-shadow:0 25px 90px #0006}
+.modal-panel h3{font-size:2.2rem;margin:10px 0 22px}
+.modal-close{position:absolute;right:14px;top:10px;border:0;background:transparent;font-size:2rem;color:var(--ink);line-height:1}
+.image-modal{width:min(900px,100%);padding:16px}
+.image-modal img{max-height:75vh;object-fit:contain}
+.search-results{display:grid;gap:12px;margin-top:20px}
+.search-result{display:flex;align-items:center;justify-content:space-between;gap:15px;border-bottom:1px solid var(--line);padding:12px 0}
+.search-result small{display:block;color:var(--muted)}
+.cart-row{display:flex;justify-content:space-between;align-items:center;gap:12px;border-bottom:1px solid var(--line);padding:15px 0}
+.cart-row button{border:1px solid var(--line);background:transparent;padding:5px 10px}
+.cart-total{display:flex;justify-content:space-between;padding:24px 0;font-size:1.05rem}
+.demo-note{background:#eee5d7;padding:12px;font-size:.76rem;color:#6e5840}
+#toast{position:fixed;z-index:120;right:22px;bottom:22px;max-width:min(390px,calc(100% - 44px));background:var(--dark);color:white;padding:15px 21px;box-shadow:var(--shadow);opacity:0;transform:translateY(15px);pointer-events:none;transition:.25s;font-size:.85rem}
+#toast.show{opacity:1;transform:translateY(0)}
+/* MOBILE NAV */
+@media(max-width:1000px){
+ .nav-links{gap:12px;font-size:.69rem}
+ .product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .product-image img{height:350px}
+ .note-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .intro-grid{gap:40px}
+ .split-copy{padding:32px}
+}
+@media(max-width:760px){
+ .section{padding:70px 0}
+ .topline{font-size:.58rem;letter-spacing:1px}
+ .nav{min-height:72px}
+ .brand{font-size:1.45rem}
+ .menu-toggle{display:block}
+ .nav-links{display:none;position:absolute;left:0;right:0;top:100%;background:var(--paper);padding:22px 5%;border-bottom:1px solid var(--line);box-shadow:var(--shadow);flex-direction:column;align-items:stretch;gap:0;font-size:.9rem}
+ .nav-links.open{display:flex}
+ .nav-links a{padding:12px 0;border-bottom:1px solid var(--line)}
+ .hero{min-height:650px}
+ .hero-content{padding:75px 0}
+ .hero h1{font-size:clamp(3.5rem,14vw,5.7rem)}
+ .hero-meta{gap:18px;flex-wrap:wrap;margin-top:45px}
+ .intro-grid,.split-banner{grid-template-columns:1fr}
+ .intro-image img{height:420px}
+ .split-banner img{height:350px}
+ .split-copy{padding:35px 25px}
+ .story-grid{grid-template-columns:1fr}
+ .story-card{min-height:350px}
+ .product-image img{height:300px}
+ .gallery-grid{grid-template-columns:1fr 1fr!important;grid-template-rows:210px 170px 170px!important}
+ .gallery-item:first-child{grid-row:span 2!important}
+ .footer-grid{grid-template-columns:1fr 1fr!important}
+ #newsletterForm{flex-direction:column}
+ .modal-panel{padding:28px 22px}
+}
+@media(max-width:420px){
+ .container{width:91%}
+ .nav-actions{gap:4px}
+ .brand{font-size:1.2rem;letter-spacing:1.5px}
+ .brand small{letter-spacing:2px}
+ .product-grid{gap:13px}
+ .product-image img{height:230px}
+ .product-info h3{font-size:1.35rem}
+ .product-bottom{align-items:flex-start;flex-direction:column}
+ .add-btn{width:100%}
+ .note-grid{grid-template-columns:1fr}
+ .footer-grid{grid-template-columns:1fr!important}
+ .stat-row{gap:17px}
+ .stat strong{font-size:1.7rem}
+ .hero-meta{font-size:.61rem}
+ .hero-meta strong{font-size:1.3rem}
+ .btn{padding:12px 15px;font-size:.84rem}
+}
+@media(prefers-reduced-motion:reduce){
+ *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}
+}
+</style>
+
+<script>
+"use strict";
+
+/* MAISON ÉLAN — FRONTEND DEMONSTRATION */
+const $ = (selector, root=document) => root.querySelector(selector);
+const $$ = (selector, root=document) => [...root.querySelectorAll(selector)];
+
+const money = amount => new Intl.NumberFormat("en-IN",{
+ style:"currency",currency:"INR",maximumFractionDigits:0
+}).format(amount);
+
+let cart = [];
+let favourites = new Set();
+let toastTimer;
+
+function toast(message){
+ const node=$("#toast");
+ node.textContent=message;
+ node.classList.add("show");
+ clearTimeout(toastTimer);
+ toastTimer=setTimeout(()=>node.classList.remove("show"),2800);
+}
+
+/* VIDEO FALLBACK */
+const heroVideo=$(".hero-video");
+const heroPhoto=$(".hero-photo");
+
+function useHeroFallback(){
+ heroVideo.style.display="none";
+ heroPhoto.style.display="block";
+}
+heroVideo.addEventListener("error",useHeroFallback);
+const videoSource=$("source",heroVideo);
+videoSource.addEventListener("error",useHeroFallback);
+heroVideo.play().catch(()=> {
+ /* Some browsers may block autoplay; the poster remains available. */
+});
+
+/* NAVIGATION */
+const navLinks=$("#navLinks");
+const menuToggle=$("#menuToggle");
+
+menuToggle.addEventListener("click",()=>{
+ const expanded=menuToggle.getAttribute("aria-expanded")==="true";
+ menuToggle.setAttribute("aria-expanded",String(!expanded));
+ navLinks.classList.toggle("open",!expanded);
+ menuToggle.textContent=expanded?"☰":"×";
+});
+
+$$(".nav-links a").forEach(link=>{
+ link.addEventListener("click",()=>{
+  navLinks.classList.remove("open");
+  menuToggle.setAttribute("aria-expanded","false");
+  menuToggle.textContent="☰";
+ });
+});
+
+/* PRODUCT FILTERS */
+const productCards=$$(".product-card");
+
+function filterProducts(category,query=""){
+ productCards.forEach(card=>{
+  const matchesCategory=category==="all"||card.dataset.category===category;
+  const searchable=(card.dataset.name+" "+card.dataset.category+" "+card.textContent).toLowerCase();
+  const matchesQuery=searchable.includes(query.toLowerCase());
+  card.hidden=!(matchesCategory&&matchesQuery);
+ });
+}
+
+$$(".filter-btn").forEach(button=>{
+ button.addEventListener("click",()=>{
+  $$(".filter-btn").forEach(item=>item.classList.remove("active"));
+  button.classList.add("active");
+  filterProducts(button.dataset.filter);
+ });
+});
+
+/* FAVOURITES */
+$$(".heart").forEach(button=>{
+ button.addEventListener("click",()=>{
+  const card=button.closest(".product-card");
+  const name=card.dataset.name;
+  if(favourites.has(name)){
+   favourites.delete(name);
+   button.classList.remove("active");
+   button.textContent="♡";
+   toast(name+" removed from favourites.");
+  }else{
+   favourites.add(name);
+   button.classList.add("active");
+   button.textContent="♥";
+   toast(name+" added to favourites.");
+  }
+  button.setAttribute("aria-pressed",String(favourites.has(name)));
+ });
+});
+
+/* SHOPPING BAG — LOCAL DEMO STATE ONLY */
+function addToCart(name,price){
+ const existing=cart.find(item=>item.name===name);
+ if(existing)existing.qty++;
+ else cart.push({name,price:Number(price),qty:1});
+ renderCart();
+ toast(name+" added to your demo bag.");
+}
+
+function renderCart(){
+ $("#cartCount").textContent=cart.reduce((sum,item)=>sum+item.qty,0);
+ $("#cartItems").innerHTML="";
+
+ if(!cart.length){
+  $("#cartItems").textContent="Your bag is empty. Explore the fragrance collection to begin.";
+ }else{
+  cart.forEach(item=>{
+   const row=document.createElement("div");
+   row.className="cart-row";
+
+   const info=document.createElement("div");
+   const title=document.createElement("strong");
+   title.textContent=item.name;
+   const price=document.createElement("div");
+   price.textContent=money(item.price)+" each";
+   price.style.cssText="color:var(--muted);font-size:.78rem";
+   info.append(title,price);
+
+   const controls=document.createElement("div");
+   controls.style.cssText="display:flex;align-items:center;gap:7px";
+   const minus=document.createElement("button");
+   minus.type="button";minus.textContent="−";
+   minus.setAttribute("aria-label","Remove one "+item.name);
+   minus.addEventListener("click",()=>changeQty(item.name,-1));
+   const qty=document.createElement("span");
+   qty.textContent=item.qty;
+   const plus=document.createElement("button");
+   plus.type="button";plus.textContent="+";
+   plus.setAttribute("aria-label","Add one "+item.name);
+   plus.addEventListener("click",()=>changeQty(item.name,1));
+   controls.append(minus,qty,plus);
+   row.append(info,controls);
+   $("#cartItems").append(row);
+  });
+ }
+
+ const total=cart.reduce((sum,item)=>sum+item.price*item.qty,0);
+ $("#cartTotal").textContent=money(total);
+}
+
+function changeQty(name,change){
+ const item=cart.find(product=>product.name===name);
+ if(!item)return;
+ item.qty+=change;
+ if(item.qty<=0)cart=cart.filter(product=>product.name!==name);
+ renderCart();
+}
+
+$$(".add-btn").forEach(button=>{
+ button.addEventListener("click",()=>addToCart(button.dataset.product,button.dataset.price));
+});
+
+$("#discoveryAdd").addEventListener("click",()=>{
+ addToCart("Discovery Set",1250);
+});
+
+$("#demoCheckout").addEventListener("click",()=>{
+ toast(cart.length
+  ?"Demo review only — no real order or payment was created."
+  :"Your demo bag is empty.");
+});
+
+/* MODALS */
+let lastFocusedElement=null;
+
+function openModal(id){
+ const modal=$("#"+id);
+ if(!modal)return;
+ lastFocusedElement=document.activeElement;
+ modal.classList.add("open");
+ document.body.style.overflow="hidden";
+ const focusable=$$("button,input,select,textarea,a[href]",modal);
+ if(focusable.length)focusable[0].focus();
+}
+
+function closeModal(modal){
+ modal.classList.remove("open");
+ if(!$$(".modal-backdrop.open").length)document.body.style.overflow="";
+ if(lastFocusedElement)lastFocusedElement.focus();
+}
+
+$$("[data-close]").forEach(button=>{
+ button.addEventListener("click",()=>closeModal(button.closest(".modal-backdrop")));
+});
+
+$$(".modal-backdrop").forEach(modal=>{
+ modal.addEventListener("click",event=>{
+  if(event.target===modal)closeModal(modal);
+ });
+});
+
+document.addEventListener("keydown",event=>{
+ if(event.key==="Escape"){
+  const modal=$(".modal-backdrop.open");
+  if(modal)closeModal(modal);
+ }
+});
+
+$("#searchOpen").addEventListener("click",()=>{
+ openModal("searchModal");
+ $("#searchInput").focus();
+});
+
+$("#cartOpen").addEventListener("click",()=>openModal("cartModal"));
+
+/* PRODUCT SEARCH */
+function renderSearch(query=""){
+ const results=$("#searchResults");
+ results.innerHTML="";
+ const matches=productCards.filter(card=>{
+  const text=(card.dataset.name+" "+card.dataset.category+" "+card.textContent).toLowerCase();
+  return text.includes(query.toLowerCase());
+ });
+
+ if(!matches.length){
+  results.textContent="No matching fragrances. Try floral, woody, fresh or amber.";
+  return;
+ }
+
+ matches.forEach(card=>{
+  const row=document.createElement("div");
+  row.className="search-result";
+  const text=document.createElement("div");
+  const name=document.createElement("strong");
+  name.textContent=card.dataset.name;
+  const detail=document.createElement("small");
+  detail.textContent=card.dataset.category+" fragrance";
+  text.append(name,detail);
+  const button=document.createElement("button");
+  button.type="button";
+  button.className="add-btn";
+  button.textContent="View ↗";
+  button.addEventListener("click",()=>{
+   closeModal($("#searchModal"));
+   const filter=$('.filter-btn[data-filter="all"]');
+   $$(".filter-btn").forEach(item=>item.classList.remove("active"));
+   filter.classList.add("active");
+   filterProducts("all",card.dataset.name);
+   $("#collection").scrollIntoView({behavior:"smooth"});
+  });
+  row.append(text,button);
+  results.append(row);
+ });
+}
+$("#searchInput").addEventListener("input",event=>renderSearch(event.target.value));
+renderSearch();
+
+/* SCENT FINDER */
+const scentRecommendations={
+ romantic:{name:"Rose Nocturne",category:"floral",reason:"A soft, expressive floral direction with rose at its heart."},
+ confident:{name:"Santal Éclipse",category:"woody",reason:"A composed woody direction inspired by sandalwood and warm spice."},
+ fresh:{name:"Citrus Sol",category:"fresh",reason:"A bright citrus direction for an effortless daytime mood."},
+ warm:{name:"Ambre Velours",category:"amber",reason:"A warm amber direction with vanilla and resinous depth."}
+};
+
+$("#scentQuiz").addEventListener("submit",event=>{
+ event.preventDefault();
+ const mood=$("#mood").value;
+ const moment=$("#moment").value;
+ const intensity=$("#intensity").value;
+ if(!mood||!moment||!intensity){
+  toast("Please complete all three questions.");
+  return;
+ }
+
+ let result=scentRecommendations[mood];
+ if(moment==="day"&&mood==="warm")result=scentRecommendations.fresh;
+ if(intensity==="soft"&&mood==="confident")result=scentRecommendations.romantic;
+
+ $("#quizResult").replaceChildren();
+ const title=document.createElement("h3");
+ title.textContent="Your direction: "+result.name;
+ const description=document.createElement("p");
+ description.style.color="#c4b6a5";
+ description.textContent=result.reason+" Your chosen occasion is "+moment+", with a "+intensity+" presence.";
+ const disclaimer=document.createElement("p");
+ disclaimer.style.cssText="font-size:.72rem;color:#b6a58e";
+ disclaimer.textContent="A playful suggestion based on your answers, not a definitive personal recommendation.";
+ const button=document.createElement("button");
+ button.className="btn btn-gold";
+ button.type="button";
+ button.textContent="Explore this fragrance ↗";
+ button.addEventListener("click",()=>{
+  closeAnyOpenModals();
+  $$(".filter-btn").forEach(item=>item.classList.remove("active"));
+  $('.filter-btn[data-filter="all"]').classList.add("active");
+  filterProducts("all",result.name);
+  $("#collection").scrollIntoView({behavior:"smooth"});
+ });
+ $("#quizResult").append(title,description,disclaimer,button);
+});
+
+function closeAnyOpenModals(){
+ $$(".modal-backdrop.open").forEach(closeModal);
+}
+
+/* GALLERY LIGHTBOX */
+$$(".gallery-item").forEach(button=>{
+ button.addEventListener("click",()=>{
+  $("#lightboxImage").src=button.dataset.full;
+  $("#lightboxImage").alt=$("img",button).alt;
+  openModal("lightboxModal");
+ });
+});
+
+/* EDITORIAL MODALS */
+$$(".journal-open").forEach(link=>{
+ link.addEventListener("click",event=>{
+  event.preventDefault();
+  $("#articleTitle").textContent=link.dataset.title;
+  $("#articleCopy").textContent=link.dataset.copy;
+  openModal("articleModal");
+ });
+});
+
+/* CONSULTATION FORM — NO NETWORK REQUEST */
+$("#consultForm").addEventListener("submit",event=>{
+ event.preventDefault();
+ const form=event.currentTarget;
+ if(!form.reportValidity())return;
+
+ const name=$("#fullName").value.trim();
+ const style=$("#briefStyle").value;
+ const message=$("#briefMessage").value.trim();
+
+ const preview=$("#articleCopy");
+ $("#articleTitle").textContent="Your fragrance brief preview";
+ preview.textContent="Name: "+name+". Scent direction: "+style+". Notes: "+(message||"No additional notes supplied")+". This is a local preview only; the brief has not been sent or saved.";
+ openModal("articleModal");
+ toast("Your brief preview is ready.");
+});
+
+/* NEWSLETTER — DEMONSTRATION ONLY */
+$("#newsletterForm").addEventListener("submit",event=>{
+ event.preventDefault();
+ if(!event.currentTarget.reportValidity())return;
+ event.currentTarget.reset();
+ toast("Demo only — you have not been subscribed to a mailing list.");
+});
+
+/* ACCESSIBLE IMAGE FALLBACK */
+$$("img").forEach(img=>{
+ img.addEventListener("error",()=>{
+  img.style.display="none";
+  const parent=img.parentElement;
+  if(parent&&!parent.querySelector(".image-fallback")){
+   const fallback=document.createElement("div");
+   fallback.className="image-fallback";
+   fallback.textContent="MAISON ÉLAN · THE ART OF SCENT";
+   fallback.style.cssText="min-height:180px;height:100%;display:grid;place-items:center;text-align:center;padding:20px;background:linear-gradient(135deg,#ded0bc,#f6f0e6);color:#75614a;font:1.1rem Georgia,serif;letter-spacing:2px";
+   parent.append(fallback);
+  }
+ });
+});
+
+/* YEAR / INITIAL STATE */
+renderCart();
+</script>
+</body>
+</html>
+
+
